@@ -1,0 +1,42 @@
+WAFFLES GANG v3.9.5  |  TESTING PREVIEW
+
+Changes built on v3.9.4; no changes to Rain's original theme art.
+
+THREAT WATCH 1 AND 2
+- Show Own Character now pins the player's row at the top, even when
+  no threat percentage is available. The row displays WAITING, not 0%.
+- When Combat Only is ON, the player placeholder can remain visible outside combat.
+  Other party rows appear only when combat data is available.
+- The Hide When Empty option still hides the idle meter if selected.
+- Real threat percentages are shown whenever the game exposes them.
+
+WAFFLE QUEST TRACKER
+- Drag-to-resize corner appears in /wg edit; the size persists.
+- Dragging switches Auto Height OFF. Re-enable Auto Height from
+  /wg > Quests & Maps to return to automatic content sizing.
+- The same settings page provides a Show Waffle Quest Arrow checkbox.
+
+WAFFLE NAVIGATION
+- Click a quest name in Waffle Tracker to select it for following.
+- An original Waffle arrow HUD appears above action bars when a quest is followed.
+- The arrow rotates for valid same-zone coordinates and a readable player heading.
+- When no waypoint is available, it explicitly says so. It never invents coordinates.
+- TomTom and Questie remain optional complementary sources, not bundled code.
+- Move the arrow with /wg edit.
+
+MODERN
+- More rounded action icon mask. Classic icons and UI retained as before.
+
+INSTALL
+1. Exit WoW, back up AddOns/WafflesGang and WTF settings.
+2. Move the previous WafflesGang directory OUT of AddOns.
+3. Extract the new ZIP so AddOns/WafflesGang/WafflesGang.toc exists.
+4. /reload, then /wg threat and /wg > Quests & Maps.
+
+This is a testing build, not a WoW-client-verified release. Report BugSack errors.
+Quest arrows require native waypoint data for the selected quest and may be
+unavailable in restricted areas or on a different map.
+
+THIRD-PARTY CREDITS
+See CREDITS-AND-THIRD-PARTY-NOTICES.md. No Questie, TomTom, Tiny Threat,
+or EllesmereUI source/artwork is redistributed in this ZIP.

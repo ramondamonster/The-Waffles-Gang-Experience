@@ -1,0 +1,29 @@
+WAFFLES GANG v3.9.7 - UI POLISH PREVIEW (WoW Forever)
+======================================================
+UI work only. No installer and no third-party addons bundled.
+
+CHANGES
+* Modern navigation is now a smaller 240 x 66 rounded glass compass capsule,
+  using an original Waffles pointer and compass-ring texture.
+* Modern HUD Studio lets you switch the compass to the original large chevron.
+* Quest tracker uses slightly larger default type, clearer action labels, a
+  higher-contrast Modern background and a less cluttered objective display.
+* Selected quests and valid campaign quests are considered BEFORE the visible
+  quest limit, so important rows cannot be lost behind earlier quest entries.
+* Modern action buttons now have a rounder icon mask, with no sharp horizontal
+  underline/sheen; original Classic buttons and masks remain unchanged.
+* Waffle Studio now shows category-specific illustrations repurposed from the
+  Waffles Gang v2.2 illustration set. All pages have distinct icon-stamped art.
+
+COMPATIBILITY
+* Built from the complete 3.9.6 addon; Questie waypoint bridge unchanged.
+* No third-party code/assets included. Old theme art and saved HUD positions
+  retained. Chat, Pantry, Guild, Threat, XP, and existing Questie functionality
+  are not modified by this release.
+
+TEST
+* Check /wg edit resizing and positions before and after swapping UI styles.
+* Click multiple quests and turn. Check the compass matches TomTom's direction.
+* Open Waffle Studio's Modern HUD page; toggle arrow styles while route active.
+* Compare Classic UI to previous screenshots to confirm its original design.
+* These checks require an actual WoW Forever client, not merely an offline test.

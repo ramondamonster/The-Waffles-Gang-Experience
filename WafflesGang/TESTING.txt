@@ -1,0 +1,149 @@
+V3.0 LIVE CLIENT TESTS (must be run in WoW: Forever, not a simulator)
+1. Out of combat: press B once; Pantry opens. Press again; it closes.
+2. Enter combat, test B safely and verify no protected-action error. End combat.
+3. Reload, then B again; if it fails, use /wg diag, /wg bind and check the
+   game's Key Bindings > Waffles Gang > Toggle Waffle Pantry setting.
+4. Disable the Pantry B override in /wg layout; confirm /wg bags still works.
+5. Enable Waffle XP but disable Waffle action bars. XP should remain visible.
+6. /wg edit: drag the XP handle independently of the action bar, Save & Lock,
+   reload, and confirm both elements retain separate positions.
+7. /wg gear: compare good, bad and equivalent head/leg/hand equipment; check
+   positive, negative and 0.0% values in both Gear Advisor and Pantry.
+8. Hover gear; check that tooltip says weighted stats or item level only.
+9. Change talent tree; percentages may change based on the selected weights.
+10. Verify guild, chat, palettes, bag equipping, sorting, action cooldowns,
+    Blizzard bar recovery, and level-up celebration regression behavior.
+11. Report any /console scriptErrors 1 errors with the client's GetBuildInfo.
+
+WAFFLES GANG 2.8.0 — GUILD, GEAR, PANTRY & THEME UPDATE
+- Replaced fragile secure bag icon clicks with native container buttons.
+- Added Gear Advisor, quest vendor/upgrade rewards, guild profession/recipe sharing.
+- Guild Manager now has a Party Invite action.
+- Added Cake/Pie/Pizza/Samurai style badges and theme/secondary palette controls.
+- Original art and existing controls retained; live Forever verification needed.
+See V2.8-READ-ME-FIRST.txt for specific functionality and known limits.
+
+V2.7 LIVE VERIFICATION — ACTIONS & BAG EQUIP
+1. /wg bars: cooldown countdown and gray unusable switches are checked by default, including upgrading saved v2.6 settings.
+2. Use a long cooldown: observe overlay numerals and dark swipe over the correct action icon, and clearing on completion.
+3. Test an unusable spell (e.g. lacking resources) and verify the icon becomes gray; usable icons stay full color.
+4. Test both action rows, keybinds, action pickup/placement, and enter/exit combat.
+5. Open Pantry with B. Right-click a gear item and verify it EQUIPS in the expected equipment slot.
+6. Right-click a consumable and verify normal use. Left-click an item to pick it up or put it in another slot.
+7. Switch Pantry to Quest First, favorites, and search; right-click a piece of gear and ensure it uses the correct physical bag slot.
+8. Attempt to equip unusable/soulbound/broken/locked gear: the game should enforce normal restrictions without Lua errors.
+9. If gear still won't equip, capture /console scriptErrors 1 output and the exact client build.
+
+Waffles Gang v2.3 Guild Edition live verification checklist
+
+Before first launch:
+[ ] Back up the old WafflesGang folder and SavedVariables.
+[ ] Fully restart Forever to load the new TGA texture assets.
+[ ] Turn on Lua errors: /console scriptErrors 1 then /reload.
+
+UI and visual system:
+[ ] /wg opens the new large dashboard with ten navigational entries.
+[ ] All fourteen page icons fit in their square slots, no cropping.
+[ ] Page headings fit inside the 63px header; close X works.
+[ ] Click every feature card and sidebar item, no overlap or Lua error.
+[ ] Appearance switches among Maple/Blueberry/Cherry/Key Lime and changes
+    Waffles Gang window buttons, border trim, action shell and unit shells.
+[ ] Window drag positions persist across /reload; /wg reset restores.
+[ ] Layout scale 90%, 100%, 110%; drag lock; one-window setting.
+[ ] SOLO/GROUP/RAID profiles save/load across reload.
+[ ] Help and Layout shortcuts work from the hub footer.
+
+Gameplay systems:
+[ ] Player portrait updates and health/resource bars update in gameplay.
+[ ] Target/focus portraits, labels and visibility update after target swaps.
+[ ] Enter and leave combat with target/focus/party/raid visible: check for
+    blocked actions, invisible frames, or forbidden secret-value errors.
+[ ] Action bars fire their assigned spells when clicked, drag-and-drop
+    updates, cooldown overlays update, keybinding names are correct.
+[ ] Optional second action bar appears without overlapping other controls.
+[ ] XP bar updates after earning experience.
+[ ] Pantry opens, search filters, sorting, Alt-click favorite, item
+    tooltip, drag and right-click use behave normally.
+[ ] Fill several different bags with gear, consumables and materials. Press
+    Pantry SORT: the underlying WoW inventory rearranges like native cleanup.
+[ ] Empty slots appear after occupied slots in Pantry; right-click use and
+    dragging still act on the correct ORIGINAL bag and slot after sort.
+[ ] Sort again with search/category filter active and a favorite pinned:
+    no items disappear, and the search/favorite choices remain unchanged.
+[ ] Rapidly press SORT twice: only one sort operation is requested.
+[ ] Attempt SORT while holding an item on the cursor or in combat:
+    it should not move anything, and it should show a clear explanation.
+[ ] Sort bags that are already organized: the button re-enables even if no
+    BAG_UPDATE_DELAYED event occurs; no Lua errors in chat.
+[ ] If an equipped bag is configured to ignore Blizzard cleanup, the Pantry
+    does not override that preference.
+[ ] B key opens Pantry when Layout setting is on, original binding works
+    again after turning it off.
+[ ] Party invites, ready check, role poll and convert to raid work for
+    the relevant group roles.
+[ ] Raid roster pages beyond five members with PREVIOUS/NEXT.
+[ ] Loot method shows current value and any server restrictions.
+[ ] Auto loot modes retain their original expected behavior.
+
+Recovery:
+[ ] /wg recover returns Blizzard action bars and unit frames outside
+    combat. Also disables the Pantry B-key override.
+[ ] /reload after recovery shows a usable Blizzard UI.
+
+Report any exact Lua errors and the game build, plus screenshots of Hub,
+Party Manager, your target/player frames and Action Bars.
+
+NEW IN v2.3 — MUST CHECK IN A LIVE FOREVER CLIENT
+[ ] Use an ability with a 15+ second cooldown. A readable countdown number
+    appears over its Waffle action button without blocking clicks.
+[ ] Test a charged ability, the GCD, and a second-row cooldown. Verify that
+    cooldown sweeps and numbers clear when the ability becomes usable.
+[ ] When Waffle actionbars are enabled, Blizzard action bars are invisible;
+    Waffle bar icons still cast via clicks AND existing keyboard bindings.
+[ ] Disable Waffle actionbars: Blizzard bars and mouse actions return. Test
+    enabling again, leaving/entering combat and /reload.
+[ ] Party and raid frames show readable percentages beside names. Check at
+    100%, during damage, during healing and after unit swaps.
+[ ] Turn 'Party health percentages' off in Frames/Settings; labels disappear.
+[ ] /wg chat enables/disables chat background and edit-bar styling. Verify
+    pressing Enter, sending messages, hyperlinks, channel tabs, history and
+    guild chat remain native and unaffected.
+[ ] Change between Maple/Blueberry/Cherry/Key Lime: chat tint updates.
+[ ] All subwindow BACK controls open the hub; X closes without opening hub.
+[ ] Run in combat to catch secret-value or protected-frame errors.
+
+V2.4 IN-GAME TESTING
+1. Open /wg bags: confirm three visible currency quantities including zeros, and that PLAYER_MONEY updates them.
+2. Check actual quest-tagged bag items display under Quest filter and at the top in VIEW: QUEST FIRST.
+3. SORT runs the actual game bag sorter; VIEW changes visual order only, not physical location.
+4. In /wg settings, type quest, bag, or frame and confirm only matching settings remain.
+5. Click EDIT MODE (or /wg edit); drag player, target, party, raid, action bar and launcher anchors outside combat, then SAVE & LOCK. Reload and confirm positions persist.
+6. Enable Waffle action bars: Blizzard action bars should be visually hidden and their mouse interception disabled. Turn them off or use /wg recover to restore default UI.
+7. Test combat restrictions, loading screens, edit mode, bag drag/drop and different resolutions in the actual Forever client.
+
+V2.5 IN-GAME TESTING
+1. /wg frames: confirm "Player HP / MP and target HP percentages" is enabled.
+2. Damage/heal the player and check HP% updates; spend/recover mana and check
+   the MP% beside the resource bar. Try target enemy, ally and focus.
+3. Confirm party/raid HP% still works, and can be turned off independently.
+4. Turn off "Player and target percentages" and confirm only large-frame
+   percentages disappear. Turn off Resource bars and verify MP% hides too.
+5. /wg settings: search "celebration" and verify the feature is OFF by default.
+6. /wg frames > PREVIEW WAFFLE BURST: observe an outward explosion of original
+   waffle icons, no dance emote and no persistent overlay after ~3 seconds.
+7. Turn on celebration and earn a REAL level. Character should perform /dance
+   when game state allows and the waffles burst should appear and fade.
+8. Try earning a level while in combat/moving. The game may suppress emote
+   animation; no Lua errors should occur and the UI should stay responsive.
+9. Reload with celebration disabled; no celebration should trigger at login.
+10. Verify the settings and the old Guild/Pantry/actionbar/XP systems remain.
+
+V2.6 IN-GAME BAR VISIBILITY TEST
+1. Enable Waffle action bars and Pantry; leave advanced 'Replace Blizzard unit frames' OFF. Blizzard's main and additional bars and bag icons should disappear.
+2. Toggle off Waffle action bars only; the Blizzard action bar should return but the bag bar should stay hidden while Pantry remains enabled.
+3. Toggle off Pantry; its Blizzard bag bar/buttons should return. Verify clicks work normally.
+4. Enter/leave combat and /reload; test that Blizzard layout edits do not bring default action/bag bars back while Waffles are enabled.
+5. Press B to toggle Pantry twice; it must not also open Blizzard bags.
+6. Run /wg recover to restore all default bars and the default B binding.
+7. Verify spell keybindings and abilities still work while Waffle action bars are visible, including action bars 5-8 if configured.
+8. If default bags still show, check whether your Forever build uses a different bag frame, and supply the exact game build and screenshot.

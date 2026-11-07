@@ -1,0 +1,24 @@
+Waffles Gang v3.8.0 - Threat Watch Usability / Modern UI Foundation (PREVIEW)
+
+WHAT CHANGED
+- Threat Watch meters now collapse to visible active rows by default.
+- Auto-fit active players and Hide when empty are independent checkbox options.
+- Each meter has a Lock / Unlock control, a direct drag header and a genuine
+  width/row-capacity resize grip that works outside combat.
+- /wg threat now opens the same Threat page used inside Waffle Studio.
+- The Modern style removes the waffle-wood grain and emphasizes a quieter,
+  flat surface treatment. Existing Classic art and saved layouts are intact.
+
+TESTING
+1. Back up both the WafflesGang folder and WTF. Replace, do not merge.
+2. /wg threat; select Meter 1; enable, uncheck Combat only if testing outside combat.
+3. Check Auto-fit active players. The meter collapses when empty and grows as
+   characters gain readable threat values. Set Hide when empty to remove it.
+4. Click Unlock move & resize, drag the header, then the corner grip. Lock it.
+5. Repeat independently for Meter 2.
+6. Test Modern and Classic side by side. This is not yet a complete Ellesmere-
+   level redesign; those remaining presentation changes need in-game testing.
+
+NOTE
+The user's uploaded EllesmereUI source is all-rights-reserved. This package
+uses no EllesmereUI code or visual assets. Test in WoW Forever before guild rollout.

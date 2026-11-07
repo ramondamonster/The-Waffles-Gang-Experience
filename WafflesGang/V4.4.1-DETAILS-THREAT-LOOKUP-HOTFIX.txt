@@ -1,0 +1,25 @@
+ForeverUI v4.4.1 - Details! Tiny Threat source hotfix
+
+ROOT CAUSE:
+Details! registers Tiny Threat as DETAILS_PLUGIN_TINY_THREAT. The 4.4.0
+bridge incorrectly searched for Details_TinyThreat, the addon/frame name.
+Auto silently used the native threat API and Waffle meters could show
+100% / 255% while Tiny Threat displayed 48 (100.0%).
+
+FIX:
+* Query the actual registered Details plugin ID first, then direct export,
+  retaining old aliases as compatibility fallbacks.
+* When Details_TinyThreat is loaded but its plugin cannot be found, Auto
+  displays a data-source error instead of mismatching native values.
+* Both Waffle Threat meters consume the same Tiny Threat data and ordering.
+* Studio Threat Watch now shows the detected data-source state.
+* Target/focus and relative/absolute controls identify themselves as native-
+  only when Details is the source. Other saved settings remain intact.
+
+TESTING:
+In game: /wg studio > Threat Watch > Details Threat Data. Confirm the
+SOURCE line reads DETAILS TINY THREAT CONNECTED or LIVE. Compare both
+Waffle meters to Details! Tiny Threat on the same enemy and moment.
+
+Details! and Details_TinyThreat remain separate addons; none of their code
+is bundled or modified in this package. Existing provenance and notices remain.

@@ -1,0 +1,62 @@
+HISTORICAL v3.2 DOCUMENTATION. Event creation/Save/Share commands described below are SUPERSEDED in v3.3 by the read-only Discord feed; see V3.3-DISCORD-EVENTS-READ-ME-FIRST.txt.
+
+WAFFLES GANG v3.2.0 GUILD FOCUS PREVIEW
+======================================
+
+This is an UNOFFICIAL extension built on Rain's v3.0.0 code plus the v3.1
+Adventure Center and layout-profile improvements. It preserves his art, visual
+themes, colorways, original logo, and all existing HUD/window positions.
+This package has not been tested inside a live WoW: Forever client.
+
+CLEAN INSTALL
+1. Close WoW. Back up Interface/AddOns/WafflesGang and your existing
+   WTF/Account/<account>/SavedVariables/WafflesGang.lua.
+2. Move the old WafflesGang addon folder OUT of AddOns. Do not merge files.
+3. Extract the single WafflesGang directory from this ZIP into AddOns.
+4. Do not delete WTF or reset positions. Run /console scriptErrors 1.
+
+GUILD MANAGER  /wg guild
+- Roster request throttling follows the WoW server's roughly 10-second limit.
+  The data on screen refreshes after GUILD_ROSTER_UPDATE arrives.
+- Search by name, class, rank, zone, or public note.
+- Online-only filter and sorting by online, name, level, or guild rank.
+- Select a member to see their zone/note and prefill the invite field.
+- Direct click actions: guild invitation, party invitation, whisper draft,
+  guild chat, guild professions, event board and recruitment.
+- Ranks and server permissions still control who can invite.
+- Guild invite attempts logged locally (up to 20). These are REQUESTS, not
+  confirmation that a player joined.
+
+GUILD EVENT BOARD  /wg guildboard  (or /wg events)
+- Create local guild event cards with a title, time, and short description.
+- Events are saved per current guild + realm in SavedVariables.
+- SELECT an event and click SHARE TO GUILD to announce it in guild chat.
+- With compatible online Waffles Gang clients, an explicit share also sends
+  the event through a best-effort addon message. Data is not synced when
+  everyone is offline; a later player needs someone to share it again.
+- Events are not Blizzard Calendar events, not automatic invitations,
+  and not a server-backed RSVP system.
+- REMOVE LOCAL EVENT deletes only the local copy. No remote deletion.
+- Received entries cannot overwrite the original author's entries.
+- Notes and messages are text only and cannot execute code.
+
+RECRUITMENT  /wg recruitment  (or /wg recruit)
+- Editable recruitment and new-member welcome messages, scoped to guild.
+- PREPARE CHAT opens a filled chat edit box: you select a channel and press
+  Enter yourself. Nothing auto-posts to public channels.
+- The screen shows recent invite requests, not acceptance statuses.
+
+TEST IN GAME
+1. /wg guild: confirm your Waffles Gang name, roster, and member selection.
+2. Wait for a GUILD_ROSTER_UPDATE after refresh (up to a server round trip).
+3. With another player online, test guild invite and party invite by click.
+4. /wg guildboard: save an event; confirm nothing was automatically posted.
+5. Explicitly share it, then verify guild chat and (if they have this preview)
+   the other player's Guild Board. Test while BOTH are online.
+6. /wg recruitment: edit, save, prepare a draft; do not send accidentally.
+7. Switch theme/profile, relog, and confirm your existing HUD stays in place.
+8. Report BugSack errors and which button triggered them.
+
+KEEPING THE CORE INTACT
+The separate quests/guides addon, Spoken, Questie, and your other addons
+are not included or modified. All v3.0.0 core modules remain installed.

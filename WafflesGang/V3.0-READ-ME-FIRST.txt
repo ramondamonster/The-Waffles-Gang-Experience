@@ -1,0 +1,49 @@
+WAFFLES GANG v3.0.0 — FIX RELEASE FOR WOW FOREVER
+
+INSTALL
+- Exit Forever. Back up your original WafflesGang folder and SavedVariables.
+- Delete the old WafflesGang folder, then extract this new WafflesGang folder
+  directly into your active Forever Interface/AddOns directory.
+- Restart the client. Do not keep v2.x module files in the same directory.
+
+B KEY / PANTRY
+- Tap B once to open the Pantry; tap B again to close it.
+- The B override is enabled in /wg layout when Pantry is enabled.
+- There is now a permanent "Waffles Gang / Toggle Waffle Pantry" entry in the
+  game's Key Bindings menu; assign B there if the override is intercepted by
+  other addons or unsupported by the current client.
+- /wg bind reapplies the temporary override. /wg diag prints current binding
+  diagnostics. /wg bags is a direct fallback that does not rely on any key.
+- The addon also listens for normal ToggleBackpack/ToggleAllBags game actions
+  if the override isn't delivered. Game/mod key conflicts still need testing.
+
+MOVABLE XP BAR
+- Open /wg edit or /wg bars > EDIT MODE. The XP bar has its OWN draggable
+  "MOVE XP BAR" handle, independent from the action bars.
+- Drag XP where desired, then click SAVE & LOCK or /wg edit again.
+- Positions persist in WafflesGangDB.hudPositions.xpbar.
+- Waffle XP remains visible when Waffle action bars are disabled, provided XP
+  is enabled. Blizzard's built-in XP tracking is hidden when Waffle XP is on.
+
+GEAR ADVISOR
+- /wg gear compares bag equipment with currently equipped items.
+- An estimated positive, negative, or 0.0% score now appears on comparable
+  gear. The percentage is a heuristic, NOT an exact damage/healing improvement.
+- If weighted item stats are missing, both items are compared by item level,
+  explicitly labeled "item level only". Missing data shows "?" rather than
+  invented numbers. Empty equipment slots are marked NEW SLOT.
+- Class and talent-tree profiles from v2.9 are retained.
+
+UI RESEARCH
+- Referenced Forever-compatible Bartender4 / Dominos (independently movable
+  action bars, sizing, paging), EllesmereUI (frame layout customisation),
+  ForeverUI (integrated modules), and VuloForeverUI (diagnostics, previews).
+- Recommended future improvements: paging/stance-aware bars, live layout
+  preview, in-addon diagnostics panel, and clearer native bag interactions.
+- No unverified external addon source code was copied into this package.
+
+LIMITATIONS
+- Syntax and simulated startup/interaction tests pass on the source.
+- No access to a live WoW Forever client: in-game keyboard dispatch, secure
+  item use and protected interface changes cannot be certified here.
+- Use /console scriptErrors 1 to show errors. Record /wg diag output if B fails.

@@ -1,0 +1,21 @@
+WAFFLES GANG v3.7.1 - THREAT STUDIO INITIALIZATION HOTFIX
+
+FIXED: Waffle Studio Threat Watch failed to finish initialization in v3.7.0.
+The editor attempted S:Threat()[2][key], indexing the first return value
+(the threat module) instead of the second return value (selected meter settings).
+That runtime error interrupted construction of sliders and remaining editor pages.
+
+This patch uses the actual second return value, and retains both independent
+threat meters, the four UI styles, Rain's original art, Waffle Pantry, quests
+and Discord-guild features. No saved variables are reset.
+
+TO INSTALL
+1. Fully close WoW. Back up AddOns\WafflesGang and WTF.
+2. Move your existing WafflesGang folder outside AddOns.
+3. Extract the new WafflesGang folder into AddOns. Never merge versions.
+4. Type /wg and open Threat Watch. The width and row count sliders should
+   appear below SIZE & DENSITY; switch to Advanced for bar height/speed.
+5. Test selecting METER 2 and changing its settings independently.
+6. If anything fails, enable /console scriptErrors 1 and send BugSack error.
+
+Offline simulation is not a substitute for an in-game test.

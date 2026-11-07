@@ -1,0 +1,55 @@
+WAFFLES GANG 3.1 FEATURE PREVIEW (UNOFFICIAL EXTENSION)
+========================================================
+Based directly on Rain's clean v3.0.0 Guild Edition. This preview is NOT
+presented as Rain's official release. All existing artwork, palettes, UI
+positions, original Lua gameplay modules, and external quest addons remain.
+
+NEW: /wg adventure  (or /wg session or /wg stats)
+- Adventure Center panel tracks XP earned, estimated XP/hour, approximate
+  time to next level, net money change, quests turned in and deaths.
+- Readiness: free bag slots, equipped item durability when supported by the
+  Forever client, and party size. No automatic actions are performed.
+- Buttons open the existing Waffle Pantry and Gear Advisor.
+- Session counters start on login and reset on reload. NEW SESSION resets
+  them manually. Multi-level XP totals/ETA are estimates; some APIs may
+  be unavailable or protected in particular beta builds.
+- Panel is closed by default. No new HUD elements appear on screen.
+
+IMPROVED: /wg profiles
+- SOLO/GROUP/RAID profiles now save HUD and window positions as well as the
+  older feature, theme, and scaling settings.
+- Existing pre-3.1 profiles continue to load, keeping current HUD positions
+  because they did not have positional data when originally saved.
+- Save/load is intentionally blocked during combat.
+- Creating or loading a profile never changes the main theme's art files.
+
+INSTALL
+- Fully exit WoW. Back up your entire existing AddOns/WafflesGang folder
+  and your WTF SavedVariables.
+- Move the original WafflesGang folder outside AddOns as a backup.
+- Extract the SINGLE WafflesGang folder from this ZIP directly into AddOns.
+- Do not extract over the existing folder or nest WafflesGang/WafflesGang.
+- Game uses Interface 16001. Keep Questie, Spoken, WafflesGangGuides, etc.
+  as their own independent addon folders.
+- Launch Forever. Type /console scriptErrors 1, then /wg adventure.
+
+LIVE TEST PLAN
+1. /wg adventure: confirm window is themed with your selected palette.
+2. Kill something/earn XP, then confirm XP earned changes.
+3. Turn in a quest and confirm QUESTS TURNED IN increases.
+4. Change money, confirm NET GOLD CHANGE; bank/vendor spending is net.
+5. Open inventory and check free slots; unavailable APIs must show Unavailable.
+6. Verify /wg adventure panel doesn't alter unit/action bars or positions.
+7. /wg profiles: save SOLO with current HUD positions, move an element with
+   /wg edit, save GROUP, then load SOLO and verify positions restore.
+8. Reload and confirm both profiles still load their saved positions.
+9. Test switching themes and enabling/disabling Waffle Pantry and Gear.
+10. Test entering combat, switching profiles while in combat (should refuse),
+    and exiting combat without taint or Lua errors.
+
+LIMITATIONS
+- Source-level structural checks pass; this environment cannot run a live
+  WoW Forever client. Treat this as an opt-in preview requiring game tests.
+- Some per-combat values are restricted/secret on Forever. This pack does
+  not attempt prohibited automation or promise real-time enemy analysis.
+- The original v3.0.0 ZIP remains the rollback baseline.

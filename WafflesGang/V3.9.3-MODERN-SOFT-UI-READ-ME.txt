@@ -1,0 +1,21 @@
+Waffles Gang v3.9.3: Modern Soft UI Preview
+
+MODERN ONLY
+* 9-slice rounded translucent panel backgrounds with no stretched corners
+* rounded buttons and softer glass-like edges using existing theme palettes
+* original live unit portraits restored, circular masked in Modern
+* rounded action icons with floating bars retained
+* rounded thicker XP meter, default 12px, adjustable 8-18px
+* rounded modern quest tracker and progress strips
+* Modern Studio XP opacity, width, thickness controls
+* Waffles/Cake/Pie/Pizza/Samurai themes and colorways preserved
+
+CLASSIC
+* No change to Classic geometry, art or themes
+* No changes to the quest tracker, guild sync, threat calculations or Pantry
+
+INSTALL
+Back up WafflesGang and WTF folders; completely exit WoW; move old WafflesGang folder outside AddOns; extract WafflesGang from this ZIP directly to AddOns.
+
+QA
+This is an offline tested preview. Please compare Modern and Classic in the game, then send a screenshot of action bars, XP and player portrait.

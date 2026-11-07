@@ -1,0 +1,16 @@
+Waffles Gang v3.3.2 Pantry Initialization Recovery (test build)
+
+Fixes the half-initialized Pantry that reports Bags.lua:275: attempt to index field counter (a nil value).
+The window had been created but the button builder had not reached the UI counter or B-key binding setup.
+
+Changes:
+- Set up the slot counter, gold display, and keybinding controls before building inventory buttons.
+- If a client update rejects a native ContainerFrameItemButtonTemplate, retry its slot as a secure button.
+- Keep updating other inventory slots if individual buttons fail to initialize.
+- Add /wg diag reports for item button count, counter, keybinding owner, and first button error.
+- No modifications to themes, action bars, profiles, or event synchronization.
+
+Install: Completely exit WoW. Back up your WafflesGang folder and WTF settings. Move the old WafflesGang folder out of AddOns, then extract this archive into AddOns; do not merge.
+Test /wg bags, /wg bindbags, B, and /wg diag. Look for Pantry UI: counter true, item buttons: 270, key owner: true.
+If item button count is lower or slots stay empty, use BugSack and send the new error.
+Live WoW Forever validation is still required.

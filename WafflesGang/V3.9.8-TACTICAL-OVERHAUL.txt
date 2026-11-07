@@ -1,0 +1,73 @@
+WAFFLES GANG v3.9.8 | TACTICAL COMMAND OVERHAUL
+=================================================
+
+This is an actual addon build on top of the fully working v3.9.7 package.
+It is NOT an installer and it does NOT include Questie, QuestieDB or TomTom.
+
+WHAT'S NEW IN TACTICAL
+
+1) Entirely separate Tactical combat HUD presentation
+   - New angular 9-slice armour-panel rendering throughout Waffles windows.
+   - The new plates scale with the size of each window, without stretched corners.
+   - Distinct high-contrast palettes maintain Rain's food-theme colorways.
+   - Tactical-only sans-serif typography and matte, industrial visual hierarchy.
+
+2) Action Deck and experience bar
+   - Secure action IDs, key bindings, cooldowns, drag/drop and usability preserved.
+   - 12 primary and 12 auxiliary secure slots, split into two 6-button squads.
+   - Tactical icon silhouettes with chamfered masks and framed occupied slots.
+   - Action Deck header, tactical docking surround, combat-ready spacing.
+   - Independently adjustable Tactical icon size, spacing, XP width and thickness.
+
+3) Unit Frames
+   - Dedicated tactical density, resource and health bar composition.
+   - Portrait toggle, unit-identification labels, accent warning stripe.
+   - Party/raid mechanics, threat borders and ready-check behavior preserved.
+
+4) Mission Control
+   - Higher-contrast tactical quest tracker and mission headings.
+   - Separate Tactical text size and panel opacity.
+   - A selected quest remains highlighted and can drive the Questie/TomTom bridge.
+   - Tracker resizing, navigation selection and completion grouping retained.
+
+5) Threat Matrix
+   - Distinct ALPHA / BRAVO headings and compact tactical rows.
+   - Each keeps its own settings, location and optional player waiting row.
+   - Data is only displayed when exposed by the WoW API (never fabricated).
+
+6) Comms Panel + Navigation
+   - The native chat window stays native but gains Tactical armoured framing.
+   - Tactical navigation uses an angular panel and smaller target compass.
+   - Current Questie/TomTom bridge from v3.9.6 remains intact.
+
+7) Tactical Telemetry
+   - New movable top-center mission control HUD.
+   - Real target name, group member count, combat STANDBY / ENGAGED state.
+   - No secret/protected combat data is computed or falsified.
+
+8) Waffle Studio
+   - Tactical HUD has its own dedicated page and eight independent sliders.
+   - Toggles for tactical telemetry, portraits, labels and compact threat.
+   - A new Waffle-themed technical art illustration.
+   - Modern, Adventure, and Rain Classic remain distinct UI styles.
+
+TESTING / KNOWN LIMITATIONS
+
+- Lua 5.4 syntax verification and simulated gameplay-state smoke tests passed.
+- Can't run Forever's actual client here; in-game visual alignment and
+  WoW-specific rendering capabilities still need an actual character test.
+- Test style changes out of combat, inspect Blizzard secure actions and
+  monitor any Lua errors. If a frame is misplaced use /wg edit.
+- If reverting to an earlier version, back up WTF settings first.
+
+INSTALLATION
+
+1) Exit WoW entirely.
+2) Back up AddOns/WafflesGang and the WTF folder.
+3) Move or delete the old WafflesGang addon folder (do not merge).
+4) Extract this archive in World of Warcraft/Interface/AddOns.
+5) Launch WoW, open /wg, choose Tactical under UI Styles.
+6) Click TACTICAL DECK to configure the new interface.
+
+Rain's source art and existing 5 food/Samurai themes and their colorways
+are retained. This package does not redistribute third-party addons.

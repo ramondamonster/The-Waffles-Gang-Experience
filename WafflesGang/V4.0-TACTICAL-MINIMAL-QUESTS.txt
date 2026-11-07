@@ -1,0 +1,15 @@
+FOREVERUI v4.0.0 / VETERAN FIELD REBUILD
+
+The Tactical setting is now a different HUD arrangement, not a recolored Classic shell.
+* Two six-icon rows for primary bar, optional second adjacent two-row bank.
+* Transparent action-bar backing, independent icon size/gaps, tighter XP.
+* 28px one-line signals; right-click for expanded 74px readouts, hover details, left-click settings.
+* Questie-inspired original text tracker without background, card, Mission Control header, or decorative bars. Preserves click-to-navigate and quest groups; can opt back into panel/progress in Tactical Look.
+* Replaced Tactical nav icon with simple needle; no-route state hidden by default. NAV selection under Tactical Intel.
+* Food / Samurai themes and their colorways now participate in Tactical's signal/border/panel colors, with small brand mark in window headers. Specific signal colors override only part of palette.
+* Existing 3.9.9 default parameters migrate once, without overriding settings users already customized.
+
+Commands: /wg studio ; /wg tactical ; /wg tools
+Settings: Studio > Tactical Deck / Field Intel / Tactical Finish. All 4 UI styles and independent theme/colorway memory remain.
+This source package retains all original materials. Independent Questie/ThreatClassic/etc remain separate addons.
+Combat: do not move secure buttons in combat. In-client layout validation required.

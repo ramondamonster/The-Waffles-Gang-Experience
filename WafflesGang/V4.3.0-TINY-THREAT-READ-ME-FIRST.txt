@@ -1,0 +1,28 @@
+ForeverUI v4.3.0: Tiny Threat Source + Themed Companion
+=========================================================
+
+This is an adapter, not a separate threat calculator.
+
+* When Details! Tiny Threat is the active, visible Details plugin, the Auto
+  source hides both native Waffles threat meters. Tiny Threat retains control
+  over values, class bars, threshold indicators, sorting, sounds, and updates.
+* ForeverUI adds only a transparent panel and a style/colorway accent behind
+  the existing Tiny Threat plugin. This affects Classic/Modern/Tactical/Adventure.
+* If Tiny Threat is not active, Auto falls back to the old Waffles meters,
+  honoring their existing enable flags and saved positions.
+* Choose Tiny Threat Only to keep Waffle meters hidden even when Tiny Threat
+  is not active. Select the Tiny Threat display in Details! first.
+* Choose Waffle Fallback to show the original native meters.
+
+CONFIGURATION: /wg studio -> Threat Watch -> Tiny Threat / Data Source
+You can also search Tiny Threat in the Studio control directory and Addons.
+
+IMPORTANT:
+- Install and enable Details! and Details_TinyThreat separately.
+- The Tiny Threat plugin must be selected in a Details window to provide
+  its real display. This adapter will not secretly enable or alter it.
+- Do not compare the Waffle 'absolute' mode with Tiny Threat 'relative' mode;
+  these modes do not share the same percentage definition.
+- No third-party source or artwork has been copied into this package.
+- Old Waffle threat code remains for optional fallback and emergency recovery.
+- A real WoW client test is still required for instance/visibility handling.

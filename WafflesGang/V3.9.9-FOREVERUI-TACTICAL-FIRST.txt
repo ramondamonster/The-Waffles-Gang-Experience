@@ -1,0 +1,71 @@
+WAFFLES GANG FOREVERUI 3.9.9 | VETERAN TACTICAL + DEEP SETTINGS
+==============================================================
+
+WHAT'S DIFFERENT THIS TIME
+
+Tactical is a separate, understated visual composition instead of a recolored
+Classic skin. Windows have neutral charcoal surfaces, thin rectangular edges,
+hairline accents and no lattice corners, thematic decorative panels or big
+ornamental action bar shell. The action banks are compact, with secure WoW
+buttons, bindings and cooldown functionality retained from the earlier build.
+Tactical no longer inherits a pastry/food palette for its field interface.
+Choose Sage, Arctic, Amber or White signals separately in Tactical FINISH.
+
+FIELD CONSOLE (Tactical only)
+- Real target name, level and rare/elite status when available
+- Real party/raid member count
+- Real FPS and world network latency
+- Real zone/subzone and map position (when provided by C_Map)
+- Real free bag slots and equipped-item durability (when provided by the API)
+- Server time in the status line, optionally
+- Combat-only mode, compact mode, individual data-source switches
+- Independent width (600-1050px), opacity, Edit Mode movement and shortcuts
+- No fabricated threat percentages, auto-targeting, automated rotations,
+  invented navigation endpoints or secure combat action replacement
+
+CUSTOMIZATION THAT GOES DEEPER
+- Open /wg tools for the searchable CONTROL DIRECTORY. It lists 35 functional
+  destinations, each linking to an actual existing editor or action.
+- Waffle Studio always has a visible FIND ALL CONTROLS button.
+- Under UI Styles, select TACTICAL DECK to open its three related subpages:
+    01 DECK: 6 precise bar/console size sliders, compact view, portraits, labels
+    02 FIELD INTEL: 9 readout/visibility switches and direct combat links
+    03 FINISH: 4 signal colors, 4 appearance sliders, deep editor shortcuts
+- Combat, Auras, Threat, Questing, Gear, Party, Guild, Profiles and original
+  all-feature Settings remain available and are linked from the directory.
+- /wg tactical opens the Tactical editor directly; /wg edit moves HUD panels.
+- EXPERT mode reveals additional original Studio detail controls.
+
+INSTALL
+1. Fully exit WoW. Back up Interface/AddOns/WafflesGang and your WTF folder.
+2. Remove the old WafflesGang folder from AddOns. Do not merge addon versions.
+3. Extract this ZIP so Interface/AddOns/WafflesGang/WafflesGang.toc exists.
+4. Launch WoW: Forever. Enter /wg and select UI Styles > Tactical.
+5. Open /wg tactical and check DECK > FIELD INTEL > FINISH.
+6. Open /wg tools to browse all editors. /wg recover can restore Blizzard UI.
+
+TEST CHECKLIST
+[ ] Classic looks the same as before after changing styles and changing back
+[ ] Modern actions and quest tracker still render after a switch
+[ ] Tactical windows no longer show lattice borders or decorative action art
+[ ] Tactical two-bank actions retain spell clicks and hotkeys
+[ ] Frame positions persist after relog, including Edit Mode positions
+[ ] Target, map coordinates, bag free slots, equipment condition show correct data
+[ ] Toggle compact, combat-only, each data source, and console opacity
+[ ] Directory search and each module link navigate to real options
+[ ] Test out of combat first. Switch themes before starting combat.
+[ ] Turn on /console scriptErrors 1 and capture any Lua errors
+
+WHAT IS NOT IN THE ZIP
+Questie, QuestieDB, TomTom, OpenMap, Details!, EllesmereUI, ElvUI, or any of
+their source, libraries or artwork. This package retains the existing optional
+Questie and OpenMap public-API bridges, but does not silently bundle addons.
+See CREDITS-AND-THIRD-PARTY-NOTICES.md and SOURCE-PROVENANCE.md.
+
+VALIDATION / LIMITS
+All 25 addon Lua modules were parsed successfully using Lua 5.4, and offline
+mock UI tests exercised Studio navigation in all four styles and the Tactical
+readouts/compact settings. This is NOT a claim of real WoW: Forever client
+compatibility. Actual texture alignment, combat lockdown and protected frame
+behavior still require an in-game test. The original .toc client version is
+retained; this is a preview update, not a finished live-validated release.

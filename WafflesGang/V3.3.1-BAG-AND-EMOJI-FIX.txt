@@ -1,0 +1,29 @@
+WAFFLES GANG 3.3.1 | BAG SHORTCUT + DISCORD EMOJI HOTFIX
+
+Built on Rain's v3.0, plus our v3.1/v3.2/v3.3 additions.
+No changes to Rain's art, appearance, or HUD positions.
+
+WHAT CHANGED
+- Prevents rapid double delivery of a B press (key click + native bag hook)
+  from immediately closing the Pantry.
+- Reasserts Pantry B binding once shortly after entering the world, useful
+  when other addons initialize their bindings after Waffles Gang.
+- /wg bindbags explicitly reenables the B shortcut and refreshes the binding.
+- /wg diag shows the active B binding and how many Waffles Gang key clicks were received.
+- Strips unsupported emoji glyphs from event display, even if the existing
+  EventFeed.lua was created by the older companion.
+
+IN-GAME QUICK TEST
+1. /wg bags should open/close the Pantry.
+2. Outside chat, press B. Type /wg diag to check key press count.
+3. If B is captured by Baganator or another bag addon, disable only its bag
+   replacement or temporarily disable that addon, then /reload and /wg bindbags.
+4. The Layout page also has USE B KEY FOR WAFFLE PANTRY.
+
+INSTALL
+Fully exit the game. Back up WafflesGang and WTF. Replace the entire
+AddOns/WafflesGang directory; do not merge over the old folder.
+After installing, re-run the companion sync (or preserve your existing
+EventFeed.lua) because the bundled feed is an empty placeholder.
+
+This patch is offline-tested, NOT verified inside the Forever client.

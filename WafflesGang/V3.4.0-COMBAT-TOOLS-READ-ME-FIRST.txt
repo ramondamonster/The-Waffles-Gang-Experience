@@ -1,0 +1,33 @@
+WAFFLES GANG v3.4.0 - COMBAT TOOLS PREVIEW
+
+Builds on the proven v3.3.3 Equipped Bags package and Rain's original themes.
+
+NEW
+ * Party cards show character name and level above health, using the matching player-frame style.
+ * /wg auras - Aura Studio, independent configurations for party, player, target, focus, raid.
+ * Toggle buffs/debuffs, maximum number, icon size, gap, placement, tooltips and stack labels.
+ * Buff/debuff icons are shown only when the WoW client provides their records.
+ * /wg threat - independent Threat Watch configuration; OFF by default to avoid overlaps.
+ * Threat Watch shows party/raid threat when WoW exposes readable threat figures.
+ * Threat Watch target/focus, relative/absolute, rows, width, refresh, class colors, pet.
+ * /wg edit - move threat meter using the same saved-position system as other HUD elements.
+ * Custom settings are saved in WafflesGangDB with your HUD positions and palettes.
+
+IMPORTANT LIMITATIONS
+ * WoW Forever (Interface 16001) may return secret threat/aura information in combat.
+   The addon does not attempt to bypass restrictions or report made-up threat numbers.
+ * 'Absolute' mode shows the threat percentage API result, NOT a simulated prediction.
+   Tiny Threat's historical 110/130 thresholds may be inaccurate on modern builds.
+ * This is a testing preview. No actual Forever client testing was possible here.
+ * Aura timers are intentionally not included where calculating protected expiration values is unsafe.
+ * Icons and tooltip information depend on the client's allowed APIs.
+ * The threat meter defaults OFF. Aura Studio defaults ON for PARTY only.
+ * 'RIGHT' party aura display may extend outside the party anchor. Move other UI if needed.
+ * Raid aura displays default OFF for performance reasons.
+
+INSTALL
+ 1. Close WoW. Back up WafflesGang and WTF settings.
+ 2. MOVE previous AddOns\WafflesGang out of the AddOns directory.
+ 3. Extract this zip directly into AddOns. Do not overlay old files.
+ 4. Launch WoW, test /wg frames, /wg auras, and /wg threat.
+ 5. Keep Tiny Threat enabled until you've verified the custom meter in a party.

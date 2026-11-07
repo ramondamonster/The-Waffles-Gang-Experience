@@ -1,0 +1,41 @@
+WAFFLES GANG v3.7.0 - FOUR DISTINCT INTERFACES + RESIZE UPDATE
+TEST BUILD - NOT YET VERIFIED INSIDE WOW FOREVER
+
+INSTALLATION
+1. Fully exit WoW Forever. Back up your current AddOns/WafflesGang folder and your WTF saved settings.
+2. MOVE the old WafflesGang folder out of AddOns (do not extract over it).
+3. Extract this ZIP so the TOC is at _forever_/Interface/AddOns/WafflesGang/WafflesGang.toc.
+4. Keep Questie, OpenMap, Spoken and Guides separately installed if you want them.
+5. Launch WoW. Type /wg to open Waffle Studio.
+
+FOUR DISTINCT LAYOUTS (Styles page)
+- CLASSIC: Rain's original sidebar, waffle wood and honey trim. Old Rain themes and colorways untouched.
+- MODERN: top two-row navigation, broad editing workspace, right-side quick-action rail, smooth night glass/cyan art and a minimalist unit/action-bar outline.
+- TACTICAL: compact numbered command rail, separate combat shortcut column, segmented armor-like art, high-readability HUD framing.
+- ADVENTURE: wide journal-chapter navigation, cartographic artwork, softened explorer-themed unit/action frames and ornaments.
+All styles retain the same functional tools, saved profiles and HUD positions. No external UI project artwork is included.
+
+RESIZING
+- Threat meters: /wg threat > MOVE / RESIZE IN GAME, or /wg edit when meters are previewed. Drag the outer grip at the bottom-right to change width and bar height; drag elsewhere to move. Lock when finished.
+- Threat settings now have direct width, row count, row height and update-speed sliders in both Studio and the dedicated Threat Watch editor.
+- Every Waffle window has a bottom-right resize grip for proportional zoom (70-145%). This preserves fixed-layout content rather than clipping it, and per-window settings are saved. This is not yet free-width/height content reflow.
+- The existing global window-scale control still works and combines with per-window zoom.
+
+RETAINED
+- Rain's original 5 ingredient themes and 4 Waffles colorways, plus original logo.
+- Pantry fixes, equipped bag slots, B-key fixes, gear advisor.
+- Discord/website events, guild roster and related tools.
+- Questie/OpenMap bridges, Waffle Quest Journal, Aura Studio, profiles, two independent threat displays.
+- Solo/Group/Raid saves now also carry window resize settings.
+
+IN-GAME TEST ORDER
+1. Check Classic still looks like Rain's UI.
+2. Open /wg > UI Styles, test Modern, Tactical, and Adventure in turn.
+3. Confirm Waffle Studio navigation and panels stay visible on your screen.
+4. Open /wg threat, enable test previews on both meters and test sliders.
+5. /wg edit: drag each threat window at the corner and lock when done.
+6. Test /wg bags, /wg guildboard and /wg quests to detect regressions.
+7. If addons misbehave, use /console scriptErrors 1 then /reload, and copy BugSack stack traces.
+
+The preview has passed offline Lua compilation, manifest/assets checks and limited simulated control/layout tests. Actual WoW Forever client testing is still required.
+For credits and third-party licensing notes see CREDITS-AND-THIRD-PARTY-NOTICES.md.

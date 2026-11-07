@@ -1,0 +1,45 @@
+WAFFLES GANG v3.9.1 - QUEST TRACKER REBUILD / STUDIO BACK FIX
+===========================================================
+
+IMPORTANT: This is a TESTING PREVIEW. In-game verification is required.
+
+This patch is built on v3.9.0. It is an independent original quest-tracker
+implementation referencing Questie's UX concepts without copying Questie code.
+Questie and QuestieDB remain separate optional addons for maps and quest data.
+
+Waffle Tracker 2:
+* Displays multiple quests instead of only one selected quest.
+* Automatically groups them by their native quest-log zone headers.
+* Left-click a quest title to focus/supertrack it (when supported).
+* Right-click a quest title to collapse or expand its objectives.
+* Click a zone header to collapse or expand all quests in that zone.
+* Scrolls long quest lists and resizes vertically to visible content.
+* Dark semi-transparent background, adjustable 0-95% opacity.
+* Objective progress bars when reliable numeric progress is available.
+* Configurable width, text size, max quest count, levels, zone grouping,
+  progress bars, completed quests, and watched-only view.
+* Collapsible entire tracker; right-click its header for Waffle Studio.
+* Handles clients that protect particular quest values by omitting unsafe data.
+
+Waffle Studio > Quests & Maps contains the new settings.
+Back inside Waffle Studio now navigates to the previously selected page.
+Back from its HOME page closes Studio instead of opening the older dashboard.
+
+Unchanged:
+* Rain's original Classic visuals and the Waffles/Cake/Pie/Pizza/Samurai themes.
+* All four UI style selections and per-style colorway choices.
+* Waffle Pantry, guild tools/Discord events, both threat meters, party/raid frames,
+  action bars, Questie/OpenMap bridges, profiles and HUD positions.
+* Questie and OpenMap are NOT bundled and remain independently updateable.
+
+INSTALL
+1. Fully exit WoW Forever.
+2. Back up your WafflesGang and WTF folders.
+3. Move the old WafflesGang folder outside AddOns.
+4. Extract this ZIP so AddOns/WafflesGang/WafflesGang_Forever.toc exists.
+5. Enable Waffle Tracker in /wg > Quests & Maps. If using Questie's own
+   objective tracker, hide one of them to avoid duplicate quest lists.
+6. If anything fails, use /console scriptErrors 1 and BugSack.
+
+NOTE: The Waffle Quest Journal still has its older selected-quest detail page;
+this release focuses on the in-game tracker and the Studio back navigation.

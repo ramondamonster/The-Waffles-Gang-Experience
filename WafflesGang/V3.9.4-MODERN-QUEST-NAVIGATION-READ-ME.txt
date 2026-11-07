@@ -1,0 +1,47 @@
+Waffles Gang v3.9.4: Modern HUD / Quest Navigation Preview
+
+Based on Rain's v3 and v3.9.3. Classic design, all five original themes,
+all original theme colorways, HUD positions, Pantry and guild event bridge retained.
+
+MODERN HUD
+- Floating rounded action icons: blank action slots no longer draw their
+  ghost square frames. Secure action buttons/assignments remain in place.
+- Populated action slots get subtle rounded backplates and accent outlines.
+- Native Blizzard chat controls, channels, tabs, links and history remain intact;
+  Modern adds a soft rounded translucent visual backdrop to chat and input.
+- Waffle Studio > UI Styles > Modern HUD Controls contains Chat background
+  opacity alongside the existing XP thickness, width and action icon sliders.
+
+WAFFLE QUESTS
+- Click any quest title in Waffle Tracker to follow it; right-click to fold.
+- A FOLLOWING strip shows the selected quest. Click the strip to retry the
+  route; right-click it to clear the Waffle selection/owned TomTom waypoint.
+- TomTom's existing on-screen arrow is used when a waypoint is available.
+- First choice: Blizzard C_QuestLog.GetNextWaypoint. Optional fallback for
+  older quests: a Questie TrackerUtils call guarded by pcall. That fallback
+  is NOT a documented stable Questie integration API and may need updates.
+- Questie and TomTom are optional independent addons, not bundled here.
+- If a quest has no known waypoint, the tracker says so. Selection and
+  native supertracking still work; no fake distance/arrow is shown.
+- Clearer text, larger Modern labels, better row contrast, thicker progress
+  bars, TURN IN instead of READY, and DONE instead of [OK] on objectives.
+
+THREAT WATCH
+- Accepts percentage-only threat readings when no absolute threat amount is
+  available. Actual absolute values are shown only when the game returns them.
+- Threat requires a hostile tracked enemy with live threat data. The meter
+  cannot bypass protected/secret combat values introduced by the game client.
+- Both threat meters retain their independent positions and settings.
+
+INSTALL / TEST
+1) Completely exit WoW. Back up WTF and the current WafflesGang addon folder.
+2) Move current WafflesGang folder OUT of AddOns. Do not extract over it.
+3) Extract this package's WafflesGang folder directly into Interface/AddOns.
+4) In Modern, test floating icon backplates, chat opacity and quest selection.
+5) For threat values, target and attack a hostile creature; test during combat.
+6) If a feature fails, capture BugSack errors and a screenshot.
+
+Offline checks: 23 Lua files compiled under the TexLua Lua runtime;
+script-level tests for objective grouping, TomTom waypoint selection, relative
+threat without an absolute amount, and protected threat conditions passed.
+Actual functionality must be confirmed in the WoW Forever client.

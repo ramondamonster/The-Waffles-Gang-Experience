@@ -1,0 +1,40 @@
+WAFFLES GANG 3.9.0 / PER-INTERFACE THEMES + MODERN REDESIGN PREVIEW
+
+WHAT CHANGED
+- Rain's ORIGINAL 5 visual themes and their named colorways remain unchanged:
+  Waffles (Maple, Blueberry, Cherry, Key Lime), Cake, Pie, Pizza, Samurai.
+- FOUR different UI compositions are a SEPARATE setting:
+  Classic, Modern, Tactical, Adventure.
+- Each composition remembers its own selected visual theme and colorway.
+  Example: Classic/Waffles/Maple and Modern/Pie/Cherry Filling.
+- Modern: simpler top navigation in Waffle Studio; flat, neutral tinted panels;
+  selected-theme accent colors; portrait-free full-width unit frames;
+  slimmer resource bars and simpler action bar chrome.
+- The original Classic woodgrain, texture files, layout and existing HUD
+  positions remain untouched; the current style is not forcibly changed.
+- Previous v3.8 Pantry, Questie, OpenMap, threat and guild behavior retained.
+- Existing Solo, Group and Raid profiles now also save per-interface theme
+  choices when resaved. Old profiles remain readable.
+
+TEST IN WOW FOREVER
+1. Exit WoW. Back up your AddOns/WafflesGang folder and your WTF folder.
+2. Move the old WafflesGang folder completely OUT of AddOns.
+3. Extract this ZIP into Interface/AddOns so the .toc is directly in WafflesGang.
+4. Run /wg, open UI Styles. Pick a UI, then any of Rain's five themes and
+   one of its named colorways. Switch back and forth to verify selections persist.
+5. Compare Modern and Classic HUD in a safe area. Do not test layout changes
+   in combat. The original Classic setup should remain saved.
+
+NOT YET PROMISED
+- This package has passed local Lua compilation and simulated theme/profile
+  tests, but has NOT been tested in the WoW Forever client.
+- Modern is the primary redesigned style in this release. Tactical and
+  Adventure retain their previous experimental structures and need additional
+  bespoke work to match a full professional overhaul.
+- No third-party EllesmereUI source, artwork or licensed assets bundled.
+- Other addons such as Questie and OpenMap remain separate dependencies.
+
+CREDITS
+Rain: original code, original theme artwork, WaffleLogo, and guild UI.
+Waffles Gang community: requirements and testing.
+See CREDITS-AND-THIRD-PARTY-NOTICES.md for references and licensing.

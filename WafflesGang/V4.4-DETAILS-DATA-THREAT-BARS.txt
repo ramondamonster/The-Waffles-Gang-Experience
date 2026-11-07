@@ -1,0 +1,29 @@
+ForeverUI v4.4.0 - Details! Tiny Threat data in native Waffles bars
+
+Changes:
+* Waffles Threat 1/2 stay visible and themed for Classic, Modern, Tactical, and Adventure.
+* Values, name ordering, tank status and classes are taken from the loaded Details_TinyThreat
+  plugin player_list_indexes (Details! remains the calculation engine).
+* Threat amounts and displayed percentages follow the plugin's computed data, including
+  its Classic threat value normalization. When available, row text rendered by Details!
+  is preferred for an exact displayed percentage match.
+* Does not call UnitDetailedThreatSituation while using Details-backed rows.
+* Auto uses Details data if plugin enabled; falls back to native calculations ONLY if
+  Details plugin is unavailable. Details-only never silently substitutes native numbers.
+* If Tiny Threat is not in combat or has no valid data, Waffle bars are empty/hidden,
+  not populated with fabricated or stale numbers.
+* Preview rows are illustrative, not live Details data.
+* Both Waffle meters read the target and relative/absolute mode configured in Details!
+  Tiny Threat. Their independent target/mode controls only apply to native fallback.
+* Original Tiny Threat display is not forcibly hidden; it may remain visible for comparison.
+
+Integration caution:
+  Details_TinyThreat.player_list_indexes is plugin-internal state, not a stable public API.
+  Future Details updates could change that table and require a compatibility patch.
+  Classic-mode special encounter thresholds (e.g. pull-at rows) are not displayed in
+  the Waffle bars. Displayed player values and ordering use Tiny Threat state.
+
+Open /wg studio > Threat Watch > Details Threat Data, and choose AUTO: DETAILS FIRST.
+Keep Details! and Details_TinyThreat installed and enabled.
+
+Original sources, media, credits and attribution files remain in this package.

@@ -1,0 +1,18 @@
+Waffles Gang v3.3.3 - Equipped Bags Preview
+
+Built on top of the working v3.3.2 Pantry recovery.
+
+What changed:
+- Added a themed EQUIPPED BAGS strip beneath the item grid.
+- Shows backpack, four equipped bag slots, and reagent bag if supported by the client.
+- Uses actual equipped bag item icons and tooltips when the inventory APIs provide them.
+- Shows filled/total slots independently for each bag (e.g. 7/12).
+- Clicking a bag shows its contents only. Clicking it again or SHOW ALL restores the combined view.
+- Waffle Pantry window is 88 pixels taller; existing item viewport height is unchanged.
+- Does not alter your HUD layout, action bars, bag key, inventory item handling, themes, Discord events or saved settings.
+
+Note: Bag strip is for viewing/filtering; use WoW's native character inventory slots for equipping/replacing bag items. WoW protects bag equipment actions in some circumstances.
+
+Install: Exit WoW, back up and move existing AddOns/WafflesGang folder out of AddOns, extract the WafflesGang folder from this ZIP into AddOns. Keep WTF unchanged. Test /wg bags.
+
+Tests are offline only. Actual WoW Forever in-client testing is still required.

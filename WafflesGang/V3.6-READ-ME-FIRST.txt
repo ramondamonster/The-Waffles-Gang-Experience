@@ -1,0 +1,28 @@
+WAFFLES GANG v3.6.0 FOUR UI STYLES + DUAL THREAT + OPENMAP - TEST PREVIEW
+
+IMPORTANT: Close WoW. Back up AddOns/WafflesGang and WTF. MOVE the existing WafflesGang directory out of AddOns, then extract the single WafflesGang directory here. NEVER extract over an old WafflesGang folder.
+
+NEW / CHANGED
+- /wg > UI Styles offers Classic (Rain original), Modern, Tactical, Adventure. All share the same tools and the same saved HUD layout. Rain's five existing themes, original logo, and all original Waffles colorways remain.
+- /wg threat or Studio > Threat Watch now provides **two independent meters**. Each has separate enabled, combat-only, target/focus, relative/absolute, colors, pets, player visibility, width, rows, row height, refresh speed and test preview. Both can be shown simultaneously.
+- /wg edit moves Threat Watch 1 and Threat Watch 2 independently. Meter 1 retains its original key and saved HUD position. The second uses a new key and default placement on the right until moved.
+- Meter 2's configuration is included in Solo / Group / Raid profile saves; loading an old profile without Meter 2 settings does not erase its current configuration.
+- Studio > Other Addons: view loaded status and prepare slash commands for Clique, Capping, TomTom, HandyNotes, What's Training, GTFO, DBM and OpenMap. These tools are NOT bundled or reimplemented here.
+- Studio > Quests & Maps detects optional OpenMap API, offers map access / center-on-player, and registers Waffle Quest Tracker toggle with OpenMap when supported. Questie remains a separate optional quest engine.
+- All Pantry fixes, equipped bag strip, Guild Manager, Discord event board, XP tracking, Waffle Studio, party frames and Aura Studio retained.
+- Credits/licensing details: CREDITS-AND-THIRD-PARTY-NOTICES.md.
+
+HOW TO TEST BOTH THREAT METERS
+1. /wg threat, click METER 1, enable it and select SHOW TEST PREVIEW.
+2. Click METER 2, enable it and select SHOW TEST PREVIEW.
+3. /wg edit, drag each meter to its own position and lock. Then turn off preview for real threat data.
+4. Set Meter 1 = TARGET and Meter 2 = FOCUS if desired. When focus does not exist Meter 2 falls back to target.
+5. Leave Tiny Threat installed until both Waffle meters are verified in actual combat, especially on WoW Forever where protected/secret values can prevent displaying threat data.
+
+COMPATIBILITY / LIMITATIONS
+- Neither OpenMap, Questie, HandyNotes, Clique, Capping, TomTom, GTFO, What's Training nor Details! are redistributed inside this ZIP.
+- OpenMap installed separately (Forever build): https://www.curseforge.com/wow/addons/openmap
+- UI styling changes panel textures and colors but does NOT change movable frame positions. Switch out of combat.
+- Threat APIs may return protected/secret values in combat. When unreadable, Waffle Threat Watch says the data is restricted instead of inventing numbers. Simulations are not evidence that real Forever combat data is readable.
+- Threat Watch has test-preview rows; those rows are clearly marked as PREVIEW ONLY and not live combat data.
+- This is an in-game testing preview. LUA syntax + simulated threat interactions were checked offline; WoW Forever client testing is still needed.

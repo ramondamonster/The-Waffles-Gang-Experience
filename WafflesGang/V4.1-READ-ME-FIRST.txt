@@ -1,0 +1,64 @@
+FOREVERUI v4.1.0 / EXPEDITION, METER & CONNECTION HUB
+====================================================
+Install
+1. Exit World of Warcraft completely.
+2. Back up Interface/AddOns/WafflesGang and your WTF/SavedVariables/WafflesGang.lua.
+3. Replace ONLY your existing WafflesGang directory with the new WafflesGang folder.
+4. Leave Questie, TomTom, HandyNotes, OpenMap, DBM, Clique, Capping and other external addons installed separately.
+5. Open /wg studio to customize your chosen interface.
+
+WHAT IS NEW
+
+ADVENTURE FULL UI
+- Dedicated Adventure Trail Ledger, a movable read-only field guide showing zone,
+  player level and XP progress, quest/session summary, map position and free bag slots.
+- Different explorer-style floating secure action buttons and slim XP line, independent
+  of Modern's geometry and Tactical's split command banks.
+- Adventure journal can run as a transparent quest list with zone headings, quest
+  titles and objectives rather than the old decorative card; configurable in Studio.
+- Adventure Studio provides direct controls for ledger, compact display, icon size,
+  spacing, XP width, and journal transparency and visibility.
+- Two-column chapter navigation and quick links inside Studio distinguish Adventure
+  from Classic's legacy sidebar and Tactical's numbered tool stack.
+
+THREAT WATCH / TINY THREAT-LIKE PRESENTATION
+- Your OWN built-in two threat meters now use tighter class-colored name/% rows.
+- New default width ~252px, 17px rows, six-row cap and auto-fit on empty combat data.
+- Four distinct meter skins: Classic, Modern, Tactical, Adventure.
+- Actual threat still comes from UnitDetailedThreatSituation, without fabricated data.
+- Studio -> Threat Watch -> Deep Meter Styling includes dense rows, value modes,
+  show/hide header, bar opacity, frame opacity, top-pinned player and preview.
+- A meter with no data hides by default on new/untouched layouts; custom saved
+  meter positions and settings are kept intact.
+- No Tiny Threat assets or code were copied; this is an original implementation.
+
+BRANDED NAVIGATION
+- The existing WafflesGang WaffleNavArrow.tga supplied with the project is now
+  used instead of the generic TacticalNeedle and slim Modern arrow.
+- Tactical keeps Needle's simple compact location and supports Waffle/Text/Off.
+- Adventure uses the branded arrow with small compass ring and translucent backing.
+- Questie/TomTom waypoints remain conditional on actual route data; no fake arrow
+  directions or invented routes.
+
+ADDON CONNECTIONS PAGE
+- Replaces the oversized 'Optional Addon Tools' list with a compact two-column hub
+  whose actual skin follows Classic, Modern, Tactical or Adventure.
+- Questie, TomTom and OpenMap buttons lead into OUR connected quest controls.
+- Threat Watch leads to our own meter editor.
+- Other addon buttons launch only the original external addon slash command.
+- No invasive third-party frame reskins or unsupported full-addon integration.
+- All third-party licensing/attribution remains in CREDITS-AND-THIRD-PARTY-NOTICES.md.
+
+IMPORTANT LIMITATIONS / TESTING
+- Syntax and isolated mock layout tests passed; WoW Forever in-game visual and
+  combat-lockdown regression testing still required.
+- Native secure action buttons are not moved during combat; changes apply out of combat.
+- External Tiny Threat is separate. Disable or hide its own meter to avoid duplicates.
+- Source art, historic docs, original modules and licensing/provenance kept intact.
+- The user-provided arrow shown in chat was not extracted as a separate file;
+  the previously supplied WaffleNavArrow.tga already in this addon is used.
+
+TRY: /wg studio > Styles > ADVENTURE STUDIO
+     /wg studio > Threat Watch > DEEP METER STYLING
+     /wg studio > Other Addons
+     /wg studio > Tactical Field Intel (WAFFLE arrow mode)

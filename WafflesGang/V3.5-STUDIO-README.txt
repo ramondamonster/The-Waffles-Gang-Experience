@@ -1,0 +1,47 @@
+WAFFLES GANG v3.5.0 - WAFFLE STUDIO / QUESTIE BRIDGE (TEST PREVIEW)
+
+Built from Waffles Gang v3.4.0 Combat Tools, itself built on Rain's v3 core.
+
+BIG CHANGES
+- /wg and /wg studio open one customization center: Home, Party, Auras, Threat, Quests, Guild, Pantry and Profiles.
+- Simple and Advanced modes. Advanced options remain in the existing detailed editors.
+- Four party-frame presets: Tank, Healer, DPS and Minimal.
+- Party names/levels and role abbreviations, leader, dead/offline, ready-check, and aggro indicators when supported.
+- Independent party scaling, gap and vertical/horizontal growth. Change outside combat.
+- Buff/debuff controls in Waffle Studio. Advanced Aura Studio supports a per-frame spell-ID exclusion list and 'only my auras' filter (only when readable).
+- Original Waffle Threat Watch remains independent and off by default; the new studio gives it quick controls.
+- /wg quests offers a simple themed quest journal and optional compact objective tracker (OFF by default). Questie's public API is used for ready/update notifications when installed; its own map pins remain managed by Questie.
+- Existing modules and locations preserved: Waffle Pantry, Equipped Bags, Gear Advisor, Discord guild events, professions, adventure stats, theme art and existing HUD defaults.
+- Solo/Group/Raid profiles now include party and quest settings too.
+- Right-click existing secure party frames for native unit-menu actions where supported.
+
+IMPORTANT LIMITATIONS
+- This is NOT a replacement for Questie's full quest database, map pins, pathfinder, or all advanced WeakAuras/Grid2 functions. Install Questie separately to obtain its own map markers.
+- Some threat and aura values are secret during combat on WoW Forever. The addon does not bypass those restrictions or invent values.
+- 'Show tracker' can overlap a third-party tracker; the Waffle tracker starts OFF.
+- Tiny Threat remains a valid fallback until our Waffle meter is proven in a live dungeon.
+- UI/quest tests were simulated off-client. Verify each feature in-game and capture Lua errors with /console scriptErrors 1.
+- Changes to secure group frames are postponed while in combat; moving and testing them requires leaving combat.
+
+COMMANDS
+  /wg             Waffle Studio (new main entry)
+  /wg hub         Original dashboard
+  /wg studio      Unified customization
+  /wg quests      Waffle Quest Journal
+  /wg auras       Advanced Aura Studio
+  /wg threat      Waffle Threat Watch
+  /wg edit        Drag selected HUD elements outside combat
+  /wg guildboard  Synced Discord events
+  /wg bags        Waffle Pantry
+  /wg profiles    Solo, Group and Raid settings
+  /wg recover     Restore the Blizzard UI if you encounter a blocking bug
+
+INSTALLATION
+1. Exit WoW completely. Back up your old AddOns/WafflesGang folder and the WTF folder (especially WafflesGang SavedVariables).
+2. Move the old WafflesGang folder out of AddOns. Do not extract new files over old ones.
+3. Extract this ZIP so that AddOns/WafflesGang/WafflesGang.toc exists.
+4. Leave the separate WafflesGangGuides, Questie and other independent addons in place. Do not install the included reference ZIPs: they were NOT bundled.
+5. Launch WoW, type /wg. If script errors occur, use /console scriptErrors 1 and /reload, then open BugSack.
+6. Test: Studio party preset and party level labels, Waffle Pantry B shortcut, Quest Journal, your existing Discord events, and Saved Profiles.
+
+CREDITS: See CREDITS-AND-THIRD-PARTY-NOTICES.md. Rain's original artwork is preserved.

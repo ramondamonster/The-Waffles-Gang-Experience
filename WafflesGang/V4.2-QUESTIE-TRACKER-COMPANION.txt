@@ -1,0 +1,31 @@
+FOREVERUI v4.2.0 / QUESTIE-FIRST COMPANION
+===========================================
+
+Use Questie as the real quest tracker. ForeverUI does NOT clone Questie's rows, databases, objective calculation, or quest commands.
+
+INSTALL
+- Close the game. Back up your WafflesGang folder and SavedVariables.
+- Replace Interface/AddOns/WafflesGang with the WafflesGang folder in this ZIP.
+- KEEP Questie separately installed and enabled. This ZIP does not bundle Questie.
+- Open /wg studio > Quests & Maps > QUESTIE SKIN / SOURCE.
+
+DEFAULT BEHAVIOR
+- AUTO (default) hides the native Waffle tracker when Questie's own tracker is enabled.
+- If Questie is absent or its tracker disabled, AUTO can show the native Waffle tracker if you have enabled the original Show Waffle tracker setting.
+- QUESTIE mode always hides the native Waffle tracker; enable Questie's tracker in Questie settings.
+- WAFFLE mode selects our original tracker, but does not forcibly hide Questie's separately owned UI. To prevent duplicates in WAFFLE mode, disable the Questie tracker within Questie.
+
+SKIN DESIGN
+- Uses non-interactive anchored background behind Questie_BaseFrame.
+- Follows Questie's own drag/resize and on/off state without moving it or stealing its input.
+- Four style-specific accents: Classic ornate-food palette, Modern cool glass, Tactical ultralight minimal, Adventure explorer parchment colors.
+- Food themes and colorways drive accents automatically across styles.
+- Controls: Minimal / Panel / Clear, transparency, padding, accent line, full disable.
+- In /questie, turn off Questie's own background if you don't want overlapping backgrounds. ForeverUI never edits Questie's saved settings.
+
+TEST LIMITATIONS
+- Static source inspection and offline syntax checks only. WoW Forever runtime not available.
+- This optional integration uses Questie_BaseFrame as supplied in the Questie ZIP you provided; other Questie versions may change that frame name.
+- Source, original artwork, documentation and credits remain preserved. Questie source/assets are not copied or distributed in this package.
+- The Waffle navigation arrow now also reads the active Questie/TomTom waypoint when Questie is the tracker source. TomTom is required to follow Questie's active UID; it never invents routing coordinates.
+- Corrects the previous v4.1.1 hotfix that copied the GuideNavArrow artwork but left its four references on WaffleNavArrow.

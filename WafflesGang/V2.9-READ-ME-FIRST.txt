@@ -1,0 +1,20 @@
+Waffles Gang v2.9.0 — quick start
+
+1. Close the game and replace WafflesGang with this folder.
+2. Reload and tap B. It should open Pantry; tap B again to close.
+3. Use /wg appearance. Choose Cake, Pie, Pizza or Samurai and a matching
+   colorway. Switch away and back to verify that the choice was retained.
+4. Use /wg gear. The addon should display your class, plus AUTO and only
+   your three talent trees. AUTO attempts to detect the invested tree.
+5. Use /wg guild. Verify the roster is legible and Invite to Party works
+   when server permission and party leadership allow it.
+6. Verify cooldown numbers, action bars, sorting and item use after reload.
+
+IF SOMETHING GOES WRONG
+- Run /console scriptErrors 1 then /reload and copy the error text.
+- /wg bags opens the Pantry even if another addon claims B.
+- /wg layout includes the B key override toggle.
+- /wg recover disables Waffle replacements to restore the default UI.
+
+Testing note: offline syntax and simulated startup/interaction tests passed;
+real Forever client testing remains required.

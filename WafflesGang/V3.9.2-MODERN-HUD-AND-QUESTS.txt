@@ -1,0 +1,18 @@
+Waffles Gang v3.9.2 | Modern HUD and Quest Tracker combined preview
+
+Modern changes: floating framed-light action icons and adjustable spacing,
+slim translucent XP bar and separate XP label, portrait-free lighter unit
+frames, low-profile threat meter, and lightly translucent tracker.
+Waffle Studio > UI Styles > Modern HUD Controls exposes icon size, spacing,
+XP width, opacity and label. Settings remain independent of Rain themes.
+
+Shared tracker: campaign quests pinned to top ONLY when the client flags
+them (C_CampaignInfo.IsCampaignQuest). Complete quests can be grouped at
+the bottom. Both sorting options in Waffle Studio > Quests & Maps.
+
+Classic and all original theme files unchanged. Solo/Group/Raid HUD positions
+are preserved. Avoid style changes in combat.
+
+This package is a preview; actual WoW Forever client testing is required.
+Back up your WafflesGang folder and WTF, exit WoW, then replace folder
+completely. Do not merge installations.

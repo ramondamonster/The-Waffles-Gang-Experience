@@ -1,0 +1,24 @@
+FOREVERUI 4.5.0 | WAYFINDER ADVENTURE + HUD CONTROLS
+
+- Adventure uses a weathered journal dock with an action deck arranged 6 buttons across,
+  4 rows when the second bar is enabled. Optional 12-wide layout in Adventure Studio.
+- Adventure unit frames use slim health/resource ribbons, no Classic portrait shell.
+- Adventure panels and custom menus use the Wayfinder journal 9-slice artwork.
+- Waffle Threat bars now default to 22px and migrate untouched 17px presets.
+  Details remains the data source.
+- Chat has four per-style decorative treatments; Blizzard chat input/routing remains native.
+- HUD: tiny + grip attached just outside top-left of addon-owned frames.
+  Left drag out of combat, right click to toggle lock for one element.
+  /wg lock and /wg unlock toggle all grips. Layout page also has global checkbox.
+  Original Edit Mode remains available. Solo/Group/Raid profiles also retain
+  per-style HUD settings, HUD locks, Questie and threat companion options.
+- Unsupported optional WoW events are skipped without aborting module initialization.
+  Avoid registering TRADE_SKILL_UPDATE on clients that do not expose it.
+- Blizzard Game Menu now has a visual-only, click-through layer that follows the
+  active UI style/colors. Blizzard buttons still own their original actions.
+  Other addons' windows still use their own skins; no third-party UI takeover.
+- All 4 original styles, Questie companion, Details-backed threat values,
+  and source notices remain packaged.
+
+Test in game: drag units, action bars, threat, journal outside combat;
+enter/leave combat, verify grips vanish; change to Classic, verify its original shell.

@@ -1,0 +1,37 @@
+## Interface: 16001
+## Title: |cffffc65aWaffles Gang|r
+## Notes: Questie-first tracker; Waffle threat bars using Details Tiny Threat data; native fallback; four ForeverUI styles.
+## Author: Rain (original UI), Waffles Gang contributors
+## Version: 4.5.0-wayfinder-adventure-hud
+## SavedVariables: WafflesGangDB
+## OptionalDeps: Questie, OpenMap, Details, Details_TinyThreat
+Core.lua
+UI.lua
+MenuSkin.lua
+Chat.lua
+Group.lua
+Guild.lua
+EventFeed.lua
+GuildBoard.lua
+Units.lua
+Auras.lua
+Threat.lua
+TinyThreatCompanion.lua
+QuestBridge.lua
+QuestTracker.lua
+QuestieSkin.lua
+QuestArrow.lua
+OpenMapBridge.lua
+Celebration.lua
+Bars.lua
+Bags.lua
+Gear.lua
+Rewards.lua
+GuildProfessions.lua
+AutoLoot.lua
+Automation.lua
+Adventure.lua
+ExpeditionHUD.lua
+Tactical.lua
+Studio.lua
+Bindings.xml

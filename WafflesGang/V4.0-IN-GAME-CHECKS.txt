@@ -1,0 +1,11 @@
+FOREVERUI v4.0.0 | In-game verification for World of Warcraft: Forever
+
+1. Enable Tactical from /wg studio > Styles. Reload UI (especially if secure bar slots were already visible during combat).
+2. Confirm that the top-center status ribbon is 28px high and can expand/collapse with right-click; hover for all eight data sources, left-click for Field Intel settings.
+3. Confirm that 12 action skills form 6 columns and 2 rows by default. /wg tactical > CHANGE BAR GRID switches to a 12-wide row. The 24-slot second bar appears as an adjacent bank in 6x2, or second 12-wide row in 12-wide. Drag via /wg edit.
+4. In Tactical Finish, enable Questie-like text tracker and disable progress bars: quest list must be fully transparent with zones, clickable quest titles, indented objectives and no Mission Control frame. In Quest settings enable Show Waffle tracker if previously disabled. Questie also displays its own tracker if enabled; disable whichever duplicate you do not want in the respective addon's options.
+5. Select Pie > Blueberry Crust, then Samurai > Crimson Ronin in Studio > Styles. Ensure that Tactical titles, menu/header theme mark, borders and action indicators recolor, while no Classic waffle art returns.
+6. Select an actual Questie-supported objective: Tactical nav arrow should only show for a real waypoint (TomTom is optional, can supply Questie waypoint). Try /wg studio > Field Intel > NEEDLE / TEXT / OFF. Some quests legitimately do not provide coordinates and cannot be routed.
+7. Switch to Classic and then Modern/Adventure. Classic should retain its original action bar and quest framing; Adventure windows should look like its expedition theme rather than Classic wood/ornaments.
+8. Test bar changing and UI moves outside combat, and let combat finish before geometry changes. /wg recover restores Blizzard bars if needed.
+9. With script errors on (/console scriptErrors 1), inspect logs if anything fails. This package was validated offline with Lua syntax and mock layout tests, NOT inside the WoW client.

@@ -1,0 +1,234 @@
+4.5.0 | WAYFINDER ADVENTURE / UI AUDIT
+- Adventure rebuild: 6-wide journal-backed action deck (optional 12-wide), field-ribbon unit frames, compass Trail Ledger, journal-themed addon windows.
+- Style-aware decorative chat treatments in Classic, Modern, Tactical and Adventure.
+- Blizzard Game Menu click-through colorway overlay, separately switchable in Chat & Menu Appearance. Native button actions untouched.
+- Per-HUD-frame grab tabs, right-click individual lock, /wg lock and /wg unlock. Original Edit Mode retained.
+- Thicker 22px Waffles threat bar default and migration of untouched skinny presets. Details Tiny Threat calculations unchanged.
+- Optional unsupported event registrations no longer abort module startup.
+- Profiles now preserve deeper per-style settings, HUD locks and bridge choices.
+- 29 Lua modules parsed, all TOC references checked, action-bar layout tested in four simulated styles. In-game verification still required.
+
+v4.4.0 - Waffles threat bars now consume live Details! Tiny Threat player data.
+  - Keep Waffle meter visuals, replace independent threat numbers/ordering.
+  - Preserve all four style skins and settings.
+  - Details preferred by Auto mode, native API used only if addon unavailable.
+  - No fake numbers while Details is not supplying live data.
+  - Editing/unlocking no longer silently swaps in synthetic threat values.
+  - Both Waffle meters use Tiny Threat target/mode while bridged.
+  - See V4.4-DETAILS-DATA-THREAT-BARS.txt.
+
+v4.3.0 - Tiny Threat Companion
+- Use the real Details! Tiny Threat panel as primary threat source when selected and shown.
+- Hide both Waffle meters when the Tiny Threat source is in use.
+- Four-style, colorway-aware Tiny Threat backing; no threat data or bars overwritten.
+- Studio source selector: Auto, Tiny Threat Only, Waffle Fallback.
+- Keep the native threat HUDs as optional fallback; no external addons bundled.
+
+v4.2.0: Questie-first tracker mode and style-matched backing, duplicate suppression, dedicated Questie companion Studio page.
+v4.1.0 / Expedition and Compact Threat
+- Distinct Adventure read-only Trail Ledger, floating secure action bank, text journal and chapter Studio.
+- Compact class-colored threat rows and a deep meter appearance editor for four styles.
+- Reuse original WaffleNavArrow in Tactical, Modern and Adventure without custom borrowed arrow source.
+- Rebuild internal addon connections page, avoid claiming other addons are reskinned.
+- Preserve existing modules, user settings and third-party attribution/source documents.
+
+v4.0.0 PREVIEW: Tactical HUD rebuild after 3.9.9 in-game screenshot
+- Reduced 760px top console to a 28px live tactical ribbon; right-click expands readouts, hover shows all intel.
+- Replaced oversized full-width Tactical action bank with borderless 6x2 skill grid, optional 12-wide grid, adjacent second bank when enabled.
+- Quest tracker renders a transparent Questie-like list without Mission Control cards, empty decorative background or unnecessary progress bars (Tactical default).
+- Added narrow themed navigation needle with no-route placeholder hidden by default and text/disabled nav modes.
+- Pie, Samurai and every other theme/colorway now tint Tactical's accent and panels. Theme mark visible in module headers and Tactical Studio pages.
+- Adventure window chrome now uses its distinct compact expedition heading, without the shared Classic ornamental header/corners.
+- Migrates 3.9.9 stock Tactical defaults once while preserving user changes; Classic layout remains unchanged.
+- Source code, artwork, previous docs and source/rights notices retained. Live WoW verification pending.
+
+v3.9.9 PREVIEW: ForeverUI Veteran Console + deep settings directory
+- Tactical is now a flat, square-edged design, independent of Classic's decorative materials and rounded Modern glass.
+- Compact two-bank action layout; no ornate artwork behind Tactical bars or repeated Classic window corners.
+- Movable field console with target/level/elite, squad count, FPS, world latency, zone, map position, bag room, equipment durability and optional clock.
+- Combat-only and compact console modes, width and opacity options, individually selectable data sources; no combat automation.
+- 3 new Tactical Studio subpages: DECK, FIELD INTEL and FINISH; 4 selectable signal accents; direct links to deeper combat/quest/appearance editors.
+- Searchable 35-item CONTROL DIRECTORY spanning core feature settings, combat, questing, inventory, guild, profiles and external addon shortcuts.
+- /wg tactical and /wg tools routes added; Classic and Modern gameplay source preserved.
+- 25 Lua files compile under an offline Lua parser, and offline Studio (four styles) and Field Console mock tests pass. In-client testing remains pending.
+
+v3.9.7 PREVIEW: UI-first refinement with compact Modern compass, cleaner actions, clearer quest tracker, and illustrated Studio pages. Full client validation pending.
+
+v3.9.6 PREVIEW: Questie/TomTom waypoint synchronization
+- Fixed Waffle arrow not receiving map coordinates after Questie selected an objective.
+- Follow the Questie-created TomTom waypoint UID and use world-space direction/distance.
+- Refresh Waffle arrow when Questie updates the active objective waypoint.
+- Preserve native fallback and clear obsolete waypoints without removing Questie's own waypoint.
+- No third-party source or assets bundled; client validation pending.
+
+v3.5.0 PREVIEW: Waffle Studio integrated editor, Questie public API bridge, party role/aggro controls, aura spell filters, profile extensions and credits.
+v3.5.0 PREVIEW: Waffle Studio integrated editor, Questie public API bridge, party role/aggro controls, aura spell filters, profile extensions and credits.
+v3.5.0 PREVIEW: Waffle Studio integrated editor, Questie public API bridge, party role/aggro controls, aura spell filters, profile extensions and credits.
+Waffles Gang v3.3.0 Guild Discord Events Preview
+- Retained Rain's v3.0.0 core, all five themes and each colorway.
+- Replaced v3.2 local event creation board with a read-only Discord event list.
+- Compatible with the existing deputywaffles.com public events.json feed
+  through an optional external companion script.
+- Optional in-game guild addon-message event relay with clear/removed semantics.
+- Maintains v3.2 guild roster and recruitment drafts.
+- No WoW internet requests, automatic chat posting, or Discord event edits.
+
+V3.2.0 GUILD FOCUS PREVIEW (unofficial)
+- More reliable guild roster refresh, filters, sort order, notes, member actions.
+- Guild Event Board with local records and click-to-share guild chat / opt-in addon sync.
+- Recruitment and welcome drafts with explicit manual posting.
+- Invite request history (not acceptance tracking); 3.1 Adventure Center retained.
+- Original Rain visual themes, HUD positions, profiles and core modules unchanged.
+
+Waffles Gang 3.1.0-preview: additive feature expansion (unofficial)
+- New Adventure Center: leveling session XP/hour, net gold, quests,
+  deaths, bag room, conditional durability and group readiness.
+- SOLO / GROUP / RAID profiles save and restore the HUD / window layouts.
+- No changes to Rain's existing theme artwork, action buttons, unit frames,
+  inventory, quest integrations, or addon-saving defaults.
+- /wg adventure, /wg session, /wg stats. Preview needs live-client testing.
+
+v3.0.0 — Fixes (2026-11-05)
+- Pantry B key: click down/up normalization without a timing debounce.
+- Native ToggleBackpack / ToggleAllBags fallback for clients ignoring click override.
+- Manual key-binding entry and /wg bind and /wg diag commands.
+- XP bar moved to independent UIParent position and Edit Mode handle, with saved coordinates.
+- XP toggle is independent of Waffle action bar toggle; native XP tracking hidden when appropriate.
+- Gear Advisor: positive/negative/neutral percentages on compatible items, with item-level
+  fallback for missing detailed stats and explicit unknown/loading indication.
+- Pantry gear labels refresh on item info or equipment changes.
+- Preserved original 5 themes, guild, settings, and all theme art.
+- In-game validation is still necessary.
+
+WAFFLES GANG 2.9.0 — PANTRY KEY, FULL THEMES, GEAR & GUILD POLISH
+- Fixed Pantry B press detection for clients emitting key-down or key-up
+  binding clicks; avoided a second toggle on release. Reassert binding after
+  zoning, and repair older saved disabled B overrides once on upgrade.
+- Replaced the four new theme badges with purpose-drawn Cake, Pie, Pizza and
+  Samurai emblems, plus theme-specific header and panel patterns.
+- Added 16 theme-specific complete palettes with coordinated backgrounds,
+  foreground text, borders, panel fills and highlight accents, while retaining
+  the four original Waffle palettes. Each theme remembers its own colorway.
+- Gear Advisor now detects all nine Forever classes and offers only each
+  class's three talent trees, with AUTO based on actual spent talent points
+  where available and explicit tree selection otherwise.
+- Rebuilt Guild Manager member rows into four aligned class-aware columns
+  with neutral dark backdrops, clearly colored online status and consistent
+  text-entry controls across every palette.
+- Profile saving/restoration includes theme and theme-specific colorways.
+- Lua parsing, startup, 20 theme/colorway combinations, the B key, all nine
+  class mappings, guild roster and profile persistence tested offline.
+- Live Forever client verification is still required.
+
+WAFFLES GANG 2.8.0 — GUILD, GEAR, PANTRY & THEME UPDATE
+- Replaced fragile secure bag icon clicks with native container buttons.
+- Added Gear Advisor, quest vendor/upgrade rewards, guild profession/recipe sharing.
+- Guild Manager now has a Party Invite action.
+- Added Cake/Pie/Pizza/Samurai style badges and theme/secondary palette controls.
+- Original art and existing controls retained; live Forever verification needed.
+See V2.8-READ-ME-FIRST.txt for specific functionality and known limits.
+
+v2.7.0 — ACTION BUTTONS & PANTRY EQUIP FIX
+- Ability cooldown sweeps and countdown numbers on by default; settings option to disable.
+- Gray out unusable action icons by default; uses Forever action-bar usability API with protected-value handling.
+- Cooldown refreshes on slot, spell, charge, and cooldown events; cleared disabled cooldown overlays.
+- Pantry item buttons now fire secure right-click equip/use only once (on mouse release).
+- Per-item secure item2 attributes retain real bag+slot even in filtered or sorted views.
+- Left-click pickup, drag, stack split and favorites are preserved.
+- Existing Guild Edition artwork, settings and windows remain unchanged.
+
+2.6.0 Guild Edition — 2026-11-04
+
+- Fixed the main reason the default Blizzard bag bar stayed visible: its
+  replacement no longer depends on the advanced Replace Blizzard UI toggle.
+  Enabling Waffle Pantry now independently hides the Blizzard bag bar.
+- Added modern Forever action bar and bag bar frame names, including MainActionBar,
+  newer MultiBar5–8 bars and buttons, BagsBar, and legacy/shared bag buttons.
+- Reapplies bar hiding after Blizzard Edit Mode/UI refreshes (including a bag-only
+  setup with Waffle action bars disabled) while avoiding secure operations in combat.
+- Hidden Blizzard buttons no longer intercept mouse clicks. Existing keybindings,
+  secure actions, and original frame alpha are preserved and restored on disable.
+- /wg recover now restores the Blizzard bag bar too by disabling Pantry along
+  with the action-bar and unit-frame replacements.
+- No changes to the existing Waffle artwork, palette, unit frames, Guild Manager,
+  Waffle Pantry sorting, or level-up celebration.
+- Offline mock-client and Lua parsing tests passed; Forever client testing pending.
+
+2.5.0 Guild Edition — 2026-11-04
+
+- Player frame health and MP/resource percentage labels; target and focus
+  health percentage labels, using secret-aware UnitHealthPercent and
+  UnitPowerPercent with guarded legacy fallbacks.
+- Independent new "Player and target percentages" switch (enabled by default).
+- Existing party and raid HP percentages remain controlled separately.
+- Optional level-up celebration (OFF by default): dance emote plus a
+  short animated burst of 30 real waffle-logo textures across the screen.
+- Optional visuals-only preview from the Unit / Party / Raid Frames window.
+- All previous Pantry, Guild Manager, action-bar, XP bar, settings, palette,
+  chat, sorting and automation modules retained.
+- Syntax and simulated WoW client checks passed; in-game checks pending.
+
+2.3.0 Guild Edition — 2026-11-04
+
+- Modern cooldown duration-object support and visible countdown numbers.
+- Blizzard action bars automatically hidden when Waffle actionbars enabled;
+  mouse interactions on hidden standard action buttons suppressed and restored.
+- Party and raid health percentage labels with separate on/off setting.
+- Optional chat background/input skin, following all four palettes and preserving
+  existing Blizzard chat functionality.
+- BACK navigation on all Waffle launcher subwindows; X closes directly.
+- Existing guild manager, Pantry, quest & junk options and sorting retained.
+- Headless WoW UI simulation and Lua parsing passed; live Forever tests still needed.
+
+2.2.0 Guild Edition — 2026-11-04
+
+- B-key press-once toggle for Waffle Pantry.
+- Guild Manager: roster, search, member paging, target/name invitations,
+  guild chat and guild MOTD.
+- Quest & Junk Automation with separate opt-in completed quest turn-in,
+  safe gray-quality merchant sales and full-bag deletion assistance.
+- Pantry sorting now invokes the game-native bag sort (not merely cosmetic),
+  prevents concurrent requests, tracks BAG_UPDATE_DELAYED and handles errors
+  or no-change timeout; compact view preserves actual item bag/slot references.
+- All Waffles Gang v2.1.0 Guild Edition assets and palettes retained.
+- Offline LuaTeX simulation passed; live game validation remains required.
+
+2.1.0 Guild Edition preview — 2026-11-04
+
+This release evolves the original WafflesGang-Forever-v2.0.0.zip.
+No old modules were removed. Existing saved features and palettes migrate.
+
+NEW VISUAL SYSTEM
+- Rebuilt 844 x 660 dashboard: left navigation, organized 3 x 3 feature
+  cards, original waffle emblem, additional Layout / Profiles / Help.
+- High-resolution reusable panel grain, beveled buttons, theme-reactive
+  chrome header, lattice corners, status trims.
+- 14 individually drawn waffle-themed icons, correctly centered and padded.
+- Original logo preserved; no oversized art pasted over titles.
+- All custom elements respond to Maple / Blueberry / Cherry / Key Lime.
+
+CUSTOM HUD
+- Player, target, focus and party frames add class-themed bars,
+  portraits, inset detail and level info when allowed.
+- Raid grid keeps up to 40 unit buttons, with a compact matching shell.
+- Action bars: spacing for single/double-row layouts, keybind text,
+  cooldown widgets, themed slots and experience display.
+
+NAVIGATION & SAFETY
+- Saved positions, scales 90/100/110%, drag lock, single-window mode.
+- Per-character Solo / Group / Raid profiles.
+- Raid roster paging and current loot method status.
+- Optional Pantry B-key binding; existing behavior preserved by default.
+- /wg recover restores Blizzard UI and clears B override.
+- Brand new installs keep Blizzard bars visible by default; upgrades retain
+  prior settings until the user changes them.
+- Existing Settings and Setup share synchronized feature states.
+
+VALIDATION
+- Lua 5.4 syntax checked for all 7 modules.
+- Headless module initialization, 14 windows, all palettes, raid paging,
+  settings profiles, position persistence, and emergency recovery checked.
+- Actual WoW Forever rendering, secure combat behavior and game API
+  integrations remain to be tested in the game client.
+
+v2.4.0 - Pantry gold/silver/copper individually rendered with coins; quest flag based category; Quest First / Gear First / Bag Order view while keeping physical SortBags; searchable Settings and Setup; Edit Mode for HUD frames, saved positions; Blizzard action bar visibility reinforcement and mouse input preservation.

@@ -1,0 +1,73 @@
+WAFFLES GANG v3.3.0 DISCORD EVENTS PREVIEW
+========================================= 
+
+This builds on Rain's original v3.0.0 Guild Edition and the v3.1 and v3.2
+previews. His original WaffleLogo, 5 visual themes and all their colorways,
+HUD/window placements, Waffle Pantry, Gear Advisor, guild roster, guild
+professions, and recruitment drafts are retained.
+
+WHAT CHANGED
+  /wg events or /wg guildboard is now a READ-ONLY DISCORD EVENTS board.
+  The v3.2 local manual event authoring board is no longer the active board.
+  This prevents competing calendars. Old local board entries in your
+  SavedVariables are not deleted, but no longer appear in this view.
+
+EVENT FLOW
+  Discord Scheduled Events are published by your existing TrueNAS bot to
+  https://deputywaffles.com/data/events.json.
+  The separate companion program running on YOUR GAMING PC reads that public
+  feed and generates EventFeed.lua in this addon folder. Launch WoW or use
+  /reload after the file is updated.
+
+  There is NO connection direct from WoW to the internet, and no Discord bot
+  token or web API secret required. In-game updates are not instant.
+
+INSTALL THE WOW ADDON
+  1. Exit WoW. Back up AddOns/WafflesGang and WTF SavedVariables.
+  2. Move the old WafflesGang folder out of AddOns. Do not extract over it.
+  3. Extract the new WafflesGang folder into your Forever Interface/AddOns.
+  4. Keep WTF and the separate WafflesGangGuides addon untouched.
+  5. Open /wg guildboard. It will say NOT SYNCED until a companion or
+     an online guildmate sends events.
+
+INSTALL THE COMPANION
+  Download WafflesGang-Discord-Events-Companion.zip separately.
+  Unzip it OUTSIDE the WoW addons directory. Install Python 3 on Windows
+  if necessary and double-click Sync-Events-Windows.cmd. When prompted,
+  paste the path to World of Warcraft/_forever_/Interface/AddOns.
+  The script remembers the path and gives feedback on each sync.
+  Run it before each play session or after Discord events change.
+  You can also run it while WoW is open, then type /reload to see updates.
+
+GUILD MEMBERS WITHOUT THE COMPANION
+  If an online guild member has the website feed loaded, other members
+  running v3.3 can click REQUEST FROM GUILD to receive up to 12 event summaries
+  over addon messages. The linked details and description are limited in the
+  in-game relay, while the person running the companion sees the full feed.
+  In the UI guild-shared entries say UNVERIFIED because any guild member with
+  a compatible addon can send data over the guild channel.
+  The button SHARE MY SYNCED LIST broadcasts only addon data, NOT /g chat.
+
+LINK AND RSVP BEHAVIOR
+  The event URL is placed into the chat edit box for you to copy, not sent.
+  RSVP and event management remain in Discord. There is no automatic RSVP,
+  no Discord posting, no direct web browsing from WoW, and no auto-invites.
+
+CAVEATS
+  The live deputywaffles.com feed could not be fetched in the build sandbox,
+  so the bridge parser accepts common event shapes and has offline tests, but
+  the actual event schema and WoW Forever client behavior need validation.
+  If the website changes JSON keys, a sample of its events.json may be needed.
+  A valid empty JSON event array correctly clears events; download failures
+  preserve the last good EventFeed.lua.
+  Timestamps show according to the gaming PC's local timezone.
+
+TEST IN GAME
+  - Sync while WoW is closed or run /reload afterward.
+  - /wg guildboard: check dates, titles, descriptions, RSVP count.
+  - Confirm a canceled Discord event disappears after the next sync.
+  - With two v3.3 clients online, test REQUEST FROM GUILD and SHARE MY LIST.
+  - Check guild roster, Pantry, XP, palettes and HUD positions unchanged.
+  - Capture errors with /console scriptErrors 1 and BugSack.
+
+This is an UNOFFICIAL feature preview, not a release from Rain.
